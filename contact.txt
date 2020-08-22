@@ -1,0 +1,44 @@
+<div style="height: auto; width: 1700px;">
+<center><h2>Contact Us</h2></center>
+<table align='center' width=1000>
+
+<tr>
+
+<td align='center' colspan=2>
+<b><center>Dr. Anshu Bhardwaj</b><br><br>
+<img src='images/anshu_maam.jpg'width='190' height='185' align='center'><br><br>
+<b>Senior Scientist</b><br>CSIR-Institue of Microbial Technology<br>
+Assistant Professor & Faculty Coordinator<br> The Academy of Scientific & Innovative Research (AcSIR)<br>
+
+Chandigarh-160039, India<br>
+Twitter: @anshuB <br>
+Skype: anshu.bhardwaj<br>
+<b>E-mail:</b><a href="mailto:anshub@osdd.net">anshub@osdd.net</a><br><br></td>
+
+<td align='center'colspan='2'>
+<b><center>Dr. Vinod Scaria</b><br><br>
+<img src='images/vi.jpg'width='190' height='185' align='center'><br><br>
+<b>Senior Scientist</b><br>
+Genome Informatics<br>
+CSIR-Institue of Genomics And Integrative Biology<br>
+Sukhdev Vihar,
+Mathura Road<br>
+New Delhi - 110020
+<br>
+<b>E-mail:</b><a href="mailto:vinods@igib.res.in">vinods@igib.res.in</a>
+
+<br><br><br>
+</td>
+</tr>
+<tr>
+<td align='center'><b>Nishi Sharma</b><br><br><img src='images/n.jpg' width='175' height='185'><br><br>University Institue of Engineering and Technology<br> Panjab University, <br>Chandigarh-160014, India<br><b>E-mail: </b><a href="mailto:nishisharmacool14@gmail.com">nishisharmacool14@gmail.com</a></td>
+<td align='center'><b>Kanika Tuteja</b><br><br><img src='images/k.jpg' width='175' height='185'><br><br>Centre for Systems Biology and Bioinformatics<br>Panjab University <br>Chandigarh-160014, India<br><b>E-mail: </b><a href="mailto:kanikatuteja@gmail.com">kanikatuteja@gmail.com</a></td>
+<td align='center'><b>Priyanka Rani Paul</b><br><br><img src='images/p.jpg' width='175' height='185'><br><br> Department of Biotechnology<br>Lucknow University<br>Lucknow,Uttar Pradesh, India<br><b>E-mail: </b><a href="mailto:priyankapaul008@gmail.com">priyankapaul008@gmail.com</a></td>
+</tr>
+<tr>
+<td align='center'><br><br><b>Ayush Upadhyay</b><br><br><img src='images/a.jpg' width='175' height='185'><br><br>Department of Microbiology<br>Bhaskaracharya college of applied sciences <br> Delhi University  <br>New Delhi-110001, India<br><b>E-mail: </b><a href="mailto:ayushu567@gmail.com ">ayushu567@gmail.com</a></td>
+<td align='center'><br><br><b>Tina Sharma</b><br><img src='images/t.jpg' width='175' height='185'><br><br><b>Senior Research Fellow (SRF)</b><br>CSIR-IMTECH <br>Chandigarh-160039,India<br><b>E-mail: </b><a href="mailto:sharmatina189059@gmail.com">sharmatina189059@gmail.com</a></td>
+<td align='center'><br><br><b>Kishan Kalia</b><br><img src='images/i.jpg' width='175' height='185'><br><b></b><br>Department of Bioinformatics and Biotechnology<br> DAV College <br>Panjab University <br>Chandigarh-160010,India<br><b>E-mail: </b><a href="mailto:genious.kalia.141198@gmail.com">genious.kalia.141198@gmail.com</a></td>
+</tr--->
+</table>
+</div>

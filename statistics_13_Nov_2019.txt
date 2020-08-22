@@ -1,0 +1,7 @@
+Descriptors	Mean	Min	Max
+Molecular Weight	401.29	55.93	1201.84
+XLogP	3.35	-6.18	10.11
+H_bond acceptors	6.49	1	28
+H_boond donors	2.37	0	14
+No. of rotatable bonds	6.86	0	37
+Topological Polar Surface Area	105.51	0	514.53

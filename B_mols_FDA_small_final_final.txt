@@ -1,0 +1,22 @@
+114829	DB01094	0.15	N/A	3.1455
+114	DB06710	0.15	Amnesia, anxiety, discolored hair, dizziness, dry skin, hirsutism, hostility, impaired urination, paresthesia, penis disorder, peripheral edema, sweating, and vasodilation	2.0516
+160481	DB01094	0.15	N/A	3.1455
+217	DB01094	0.15	N/A	3.1455
+2345	DB00676	0.15	Symptoms of overdose include blister formation,crusting, itching, oozing, reddening, or scaling of skin; difficulty in urinating (dribbling); jerking movements; sudden loss of consciousness	N/A
+244387	DB01094	0.15	N/A	3.1455
+25244584	DB01094	0.15	N/A	3.1455
+3035155	DB00390	0.15	Ventricular tachycardia or ventricular fibrillation, or progressive bradyarrhythmias, or heart block	4.4721
+3035155	DB00511	0.15	Ventricular tachycardia or ventricular fibrillation, or progressive bradyarrhythmias, or heart block	4.6091
+3035155	DB01078	0.15	Symptoms of overdose include ventricular tachycardia, ventricular fibrillation, progressive bradyarrhythmias, or heart block	4.9815
+3035155	DB01092	0.15	N/A	4.7797
+3035155	DB01396	0.15	Anorexia, nausea, vomiting, diarrhoea, confusion, visual disturbances, and cardiac arrhythmias	4.4764
+312	DB00624	0.15	Amnesia, anxiety, discolored hair, dizziness, dry skin, hirsutism, hostility, impaired urination, paresthesia, penis disorder, peripheral edema, sweating, and vasodilation	1.6259
+315	DB01085	0.15	N/A	2.6826
+579897	DB00396	0.15	N/A	1.8041
+6479802	DB00396	0.15	N/A	1.8041
+73145	DB01431	0.15	N/A	2.42
+73201	DB01094	0.15	N/A	3.1455
+73664	DB00416	0.15	Excessive doses can be expected to produce enhanced pharmacological effects. Overdosage may increase the risk of histamine release and cardiovascular effects, especially hypotension	2.7013
+73664	DB01199	0.15	N/A	2.6331
+73664	DB01336	0.15	N/A	2.7086
+92775	DB01094	0.15	N/A	3.1455

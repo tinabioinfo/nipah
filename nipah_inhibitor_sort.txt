@@ -1,0 +1,99 @@
+R1479 
+Ribavirin
+GS-5734
+GS-441524-Nuc
+Pyrazofurin
+Favipiravir
+Chloroquine
+9167
+NADH
+Gliotoxin
+ZINC707572
+ZINC4228245
+ZINC22048123
+ZINC1568793
+ZINC1019934
+Xestospongin C
+Verapamil
+U73122
+Thapsigargin
+Tetrandine
+Tetrahydrofolic acid
+Ryanodine
+RSV604
+Rottlerin
+Quinacrinedihydrochloridedihydrate
+Propranolol
+Praziquantel
+PMA
+Phenytoin
+Phenoxybenzamine
+OSU-03012
+Oleic Acid
+Nifedipine
+Monensin
+Mibefradil
+MG132
+Lanthanum Chloride
+KIN1408
+Iron
+ionomycin
+GYY4137
+GS-441524
+Gentian Violet
+Gallium nitrate
+Gallium citrate Ga 67
+Gabapentin
+Formycin
+EICAR
+Doxorubicin
+Dantrolene
+Cyclosporine
+Clotrimazole
+clemastine
+Cholecalciferol
+CHLOROQUINE DIPHOSPHATE
+CHEMBL562236
+CHEMBL559961
+CHEMBL556461
+CHEMBL551897
+CHEMBL551697
+CHEMBL551561
+CHEMBL1613017
+CER0144654
+Caffeine
+CA1001
+Brilliant Green
+Bradykinin
+Bosutinib
+bortezomib
+BHQ
+Benzamil
+Arg-vasopressin
+Amlodipine besylate
+Amiloride
+Adenine
+AB00993210
+AB00992391
+AB00991123
+A23187
+9290114
+848-0115
+7402683
+7-octyl-indolactam
+6-Azauridine
+5705213
+5-N-ethyl isopropyl amiloride
+4-oxo-1,4-dihydroquinoline-3,7-dicarboxylic acid
+4-oxo-1,4-dihydroquinoline-3,5-dicarboxylic acid
+4-OH-tamoxifen
+32290951
+32290947
+3-Indolebutyric Acid
+25-hydroxycholesterol 
+25-hydroxycholecalciferol
+2-APB 
+1926-2281
+16114804
+15930009
+1013-0406
