@@ -1,4 +1,4 @@
-output/*.*
+output/*
 uploaded_files/*.*
 data/nipah_vm.ova
 .project
