@@ -455,7 +455,7 @@ if(preg_match("/.*$pub_id.*/",$smi_id)){
 exec("/usr/bin/obabel -:\"$all[0]\" -O store_data/str_images/$pub_id.png");
 print"<img src='store_data/str_images/$pub_id.png' width='450' height='350'>";
 #echo"Test";
-print<<<HTML
+/* print<<<HTML
 <applet name="jmol" code="JmolApplet" archive="JmolApplet.jar" width="400" height="350" align="left">
             <param name="load"   value="sdf_files/$pub_id.SDF">
       <param name="progressbar" value="true">
@@ -467,7 +467,7 @@ background white;
 label off;
 ">
           </applet>
-HTML;
+HTML; */
 $dir_3D_mol = "$dir";
 $dir_2D_mol = '2D_mol';
 echo"<table>";
@@ -520,7 +520,7 @@ break;
 else{
 print"<img src='store_data/str_images/$pub_id.png' width='450' height='350'>";
 #echo"Test";
-print<<<HTML
+/* print<<<HTML
 <applet name="jmol" code="JmolApplet" archive="JmolApplet.jar" width="400" height="350" align="left">
             <param name="load"   value="sdf_files/$pub_id.SDF">
       <param name="progressbar" value="true">
@@ -532,7 +532,7 @@ background white;
 label off;
 ">
 </applet>
-HTML;
+HTML; */
 $dir_3D_mol = "$dir";
 $dir_2D_mol = 'data/structures_2d';
 echo"<table>";
