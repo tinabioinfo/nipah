@@ -16,14 +16,14 @@ include'for_browse.php';
 
 print"<center><h2>Browse</h2></center>";
 
-if($fname == 'ec'){///////////////////////////////////Name////////////////////////////
+if($fname == 'ec.txt'){///////////////////////////////////Name////////////////////////////
 side_bar();
-$all_rec = file("ec");
+$all_rec = file("ec.txt");
 $rec = count($all_rec);
 print"<center><b>EC50[nM] (Unique) = $rec</b></center><br>";
 print"<table bordercolor='black' border='3' align='center' id='tableTwo' class='yui'>";
 print"<thead><tr><th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b>EC50[nM]</b>&nbsp;&nbsp;&nbsp;</a></font></th><th align='center' bgcolor='#3E6990'><font color='white' size='3'><b>No. of Entries</b>&nbsp;&nbsp;&nbsp;</a></font></th></tr></thead>";
-$result = fopen('ec','r'); 
+$result = fopen('ec.txt','r'); 
 echo"<tbody>";
 while(!feof($result)){
 $name = fgets($result);
@@ -79,7 +79,7 @@ side_bar();
 #print"<table id='tableTwo' class='yui' border='3' align='center' valign='top'>";
 print"<table bordercolor='black' bgcolor='#B4CFEC' border='3' align='center' id='tableTwo' class='yui'>";
 print"<thead><tr><th align='center' bgcolor='#006699'><font color='white' size='3'><a href='#' title='Click Header to Sort'><b>Plant family</b>&nbsp;&nbsp;&nbsp;</a></font></th><th align='center' bgcolor='#006699'><font color='white' size='3'><a href='#' title='Click Header to Sort'><b>No. of Entries</b>&nbsp;&nbsp;&nbsp;</a></font></th></tr></thead>";
-$result = fopen('ec','r');
+$result = fopen('ec.txt','r');
 echo"<tbody>";
 while(!feof($result)){
 $name = fgets($result);
