@@ -40,7 +40,7 @@ if (($handle = fopen("priority_inhibitors.tsv", "r")) !== FALSE) {
             if ($row == 1) {
                 echo '<th>'.$value.'</th>';
             }else{
-		if($c==0){echo "<td><a href=/anshu/nipah/search-nidb.php?compound_id=$value&type=compound_id target=_blank>".$value.'</a></td>';}
+		if($c==0){echo "<td><a href=search-nidb.php?compound_id=$value&type=compound_id target=_blank>".$value.'</a></td>';}
 
 		else{
                 echo '<td>'.$value.'</td>';
