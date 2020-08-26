@@ -26,7 +26,7 @@ print <<<HTML
     a.rollover:hover > img {
             width: 200px;
     }
-    
+      
 </style>
 
 	<!-- jQuery -->
@@ -46,26 +46,26 @@ $(function() {
 		widgets : ['zebra','columns'],
 		sortList : [0]
 	});
-	
+
 	$('.demo').tablesorter();
-	
+
 	// grey & dropbox themes need the {icon} for header icons
 	$('.tablesorter-dropbox,.tablesorter-grey').tablesorter({
 		headerTemplate: '{content}{icon}' // dropbox theme doesn't like a space between the content & icon
 	});
-	
+
 	$('.tablesorter-bootstrap').tablesorter({
 		theme : 'bootstrap',
 		headerTemplate: '{content} {icon}',
 		widgets    : ['zebra','columns', 'uitheme']
 	});
-	
+
 	$('.tablesorter-jui').tablesorter({
 		theme : 'jui',
 		headerTemplate: '{content} {icon}',
 		widgets    : ['zebra','columns', 'uitheme']
 	});
-	
+
 });
 </script>
 
@@ -100,7 +100,7 @@ $(function() {
 </script>
 
 <font face="Verdana"><center><h2><b>Query Builder</b></h2></font>
-<p align='center'><b>Users may build complex queries using the logical operators 'AND' and 'OR'. Each sub-query can be built <br>using other operators such as LIKE, NOT LIKE, EQUAL and NOT EQUAL TO while dealing with strings<br> like
+<p align='center'><b>Users may build complex queries using the logical operators 'AND' and 'OR'. Each sub-query can be built <br>using other operators such as LIKE, NOT LIKE, EQUAL and NOT EQUAL TO while dealing with strings<br> like 
 words or letters and =, !=, <=, >=, < and > while dealing with numerical values.<br> The Query builder aids to the flexibility of performing search on a number of fields simultaneously.</p></b><br>
 <form name='form1' action='$PHP' method='post' onsubmit="return formValidation(this);">
 <select name='fieldsi[]' style="font-size:20px">
@@ -128,7 +128,7 @@ words or letters and =, !=, <=, >=, < and > while dealing with numerical values.
 <option value='pubmed_source_lit'>PubMed ID (Source Literature)</option>
 <!--option value='' align='center' style="background-color: #FFCCCC">Reference</option>
 <option value='ref'>Reference 1</option -->
-</select>
+</select> 
 <select name='fieldsi_op[]' style="font-size:20px">
 <option value='like'>LIKE</option>
 <option value='not like'>Not LIKE</option>
@@ -140,7 +140,7 @@ words or letters and =, !=, <=, >=, < and > while dealing with numerical values.
 <option value='>='> &gt= </option>
 <option value='<'> &lt </option>
 <option value='>'> &gt </option>
-</select>
+</select> 
 
 <input type='text' name='keyword[]' id='first_box' size='50' style="font-size: 20px;">
 <!-- input type="button" onclick="addElement()" value="+">&nbsp;<input type="button" onclick="removeElement()" value="-" -->
@@ -182,7 +182,7 @@ if (isset($_POST['keyword'])) {
             if ($operate != 'not') {
                 if ($field_val == 'all') {
                     $result = mysql_query("SHOW COLUMNS FROM $table");
-                    
+
                     if (mysql_num_rows($result) > 0) {
                         $i = 0;
                         while ($row = mysql_fetch_array($result)) {
@@ -198,7 +198,7 @@ if (isset($_POST['keyword'])) {
                                  * }
                                  */
                                 $qu_mul = $qu_mul . ' ' . $operate . ' ' . "$fi_name $field_op_val '%$keyw%'";
-                                
+
                                 print "$qu_mul = $qu_mul.' '.$operate.' '.$fi_name $field_op_val '%$keyw%'";
                             } else {
                                 $fi_name = $row[0];
@@ -211,13 +211,13 @@ if (isset($_POST['keyword'])) {
                                  * $fi_name = 'iict_design.'."$fi_name";
                                  * }
                                  */
-                                
+
                                 $qu_mul .= " or " . "$fi_name $field_op_val '%$keyw%'";
                             }
                             $i ++;
                         }
                     }
-                    
+
                     # echo $qu_mul."<br>";
                 } else {
                     $display["$field_val"] = 0;
@@ -244,13 +244,13 @@ if (isset($_POST['keyword'])) {
                 $qu_mul = $qu_mul . ' ' . "and $field_val not like '%$keyw%'";
             }
         } # # Coding for Complex Query End
-        
+
         # # Coding for Single Query Start
         else {
             # echo $table."Y";
             if ($field_val == 'all') {
                 $result = mysql_query("SHOW COLUMNS FROM $table");
-                
+
                 if (mysql_num_rows($result) > 0) {
                     $i = 0;
                     while ($row = mysql_fetch_array($result)) {
@@ -321,7 +321,7 @@ if (isset($_POST['keyword'])) {
         }
         # # Coding for Single Query End
     }
-    
+
     $display["compound_id"] = 0;
     $display["compound_image"] = 0;
     $display["inhibitor"] = 0;
@@ -339,7 +339,7 @@ if (isset($_POST['keyword'])) {
     $sql = "$qu_pre" . "$qu" . "$qu_mul";
     # #exit;
     # echo"$sql<br>";
-    
+
     # ################################
     # ### Display Results Coding Start
     # ################################
@@ -360,7 +360,7 @@ if (isset($_POST['keyword'])) {
     # # check for empty column value
     while ($row1 = mysql_fetch_array($res1)) {
         for ($j = 0; $j < mysql_num_fields($res1); $j ++) {
-            
+
             $f_name1 = mysql_field_name($res1, $j);
             $f_val1 = $row1[$f_name1];
             # ## check code loop
@@ -376,7 +376,7 @@ if (isset($_POST['keyword'])) {
         }
     }
     ## End of logic for remove empty value column
-    
+
     $res = mysql_query($sql) or die(mysql_error());
     $res_no = mysql_num_rows($res);
     if ($res_no == 0) {
@@ -418,7 +418,7 @@ HTML;
             'pubmed_source_lit' => 'PubMed ID [Source Literature]',
             'ref3' => 'Curator'
         );
-        
+
         echo "<table class=\"tablesorter-bootstrap\" border = 2 align = center>";
         echo "<thead bgcolor=#3E6990 style=\"color:white;\">";
         for ($i = 0; $i < mysql_num_fields($res); $i ++) {
@@ -434,13 +434,13 @@ HTML;
         while ($row = mysql_fetch_array($res)) {
             print "<tr>";
             for ($i = 0; $i < mysql_num_fields($res); $i ++) {
-                
+
                 $f_name = mysql_field_name($res, $i);
                 $f_val = $row[$f_name];
-                
+
                 if ($f_name == 'compound_id') {
                     print "<td><a href='search-nidb.php?compound_id=$f_val&type=compound_id' title='Click to See Details' style='text-decoration: none;padding-right:20px;'>$f_val</a></td>";
-                }
+                } 
                 else if ($f_name == 'compound_image') {
                     $c_id = $row['compound_id'];
                     $res_pub = mysql_query("select pubchem_id from $table where compound_id='$c_id'");
@@ -470,9 +470,9 @@ HTML;
                                     # print $idi;
                                     exec("/usr/bin/obabel -:\"$all[0]\" -O store_data/str_images_smile/$c_id.svg");
                                     print "<a href='' class='rollover'><img src='store_data/str_images_smile/$c_id.svg'></a>";
-                                    
+
                                     # print"<img src='http://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=l&cid=$all[0]'>";
-                                    
+
                                     break;
                                 }
                                 # print "$b<br>";
