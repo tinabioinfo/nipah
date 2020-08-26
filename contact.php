@@ -44,7 +44,7 @@ print <<<HTML2
       <img src="images/vi.jpg" alt="Dr. Vinod Scaria" style="height:277px;">
       <div class="container">
         <h2><a href='https://scholar.google.com/citations?user=lRVbF9sAAAAJ&hl' target=_blank>Dr. Vinod Scaria</a></h2>
-        <p><a class="title">Senior Scientist, </a> </p>
+        <p><a class="title">Principal Scientist, </a> </p>
 		<p>Genome Informatics,<br> <br>CSIR-Institue of Genomics And Integrative Biology (CSIR-IGIB),</p>
 		<p> South Campus, Mathura Road, New Delhi, India</p>
         <p><a href="mailto:vinods@igib.res.in">vinods@igib.res.in<br></a></p>
