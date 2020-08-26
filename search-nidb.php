@@ -442,7 +442,7 @@ echo'
 </td></tr>';
 */
 if(!file_exists("store_data/str_images/$pub_id.png")){
-#$a = file("./All_BioPhytMol_SMILES_531_classified.txt");
+
 $a = file("./633_reloaded_2_smiles.smiles");
 foreach($a as $b){
 $all = split("\t",$b);
