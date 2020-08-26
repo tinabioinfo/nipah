@@ -18,26 +18,26 @@ echo "<title>NVIK VirtualBox</title>";
 	<a name="top"></a>
 	<div id="col1">
 		<p><center>
-			<h2>NVIK Database Virtual Machine for VirtualBox</h2>
+			<h2>Nipah Virus Inhibitor Knowledgebase (NVIK) Virtual Machine for VirtualBox</h2>
 			</center>
 		</p>
 		<hr />
 		<p align="justify">
 			<font size="3" face="Arial"> This page facilitates users to import
-				NVIK Database Virtual Machine (VM) for Oracle VirtualBox. Users need
+				NVIK Virtual Machine (VM) for Oracle VirtualBox. Users need
 				to install Oracle VirtualBox Version 6.1.12 or higher on their
-				computer after that user can import NVIK Database VM in VirtualBox.
+				computer after that user can import NVIK VM in VirtualBox.
 				Following is brief description...<br />
 				<ul>
 					<li><font size="3"><a href="#vboxdownload">Downloading Oracle
 								VirtualBox Software</a></font></li>
 					<li><font size="3"><a href="#vboxinstall">Installation of Oracle 
 								VirtualBox</a></font></li>
-					<li><font size="3"><a href="#vboxova">Downloading NVIK Database
+					<li><font size="3"><a href="#vboxova">Downloading NVIK
 								"nipah_vm.ova" VM appliance file</a></font></li>
-					<li><font size="3"><a href="#vboximport">Import NVIK Database
+					<li><font size="3"><a href="#vboximport">Import NVIK
 								Virtual machine in VirtualBox</a></font></li>
-					<li><font size="3"><a href="#vboxrun">Run and Update NVIK Database
+					<li><font size="3"><a href="#vboxrun">Run and Update NVIK
 								Virtual machine in VirtualBox</a></font></li>
 				</ul>
 				<hr /> <a name="vboxdownload"> <font size="3"><u>Downloading Oracle
@@ -54,7 +54,7 @@ echo "<title>NVIK VirtualBox</title>";
 				<hr /> <a name="vboxinstall"> <font size="3"><u>Installation of
 							Oracle VirtualBox</u></font><br />
 			</a> <br />User can install VirtualBox with its extension packs and
-				proceed to import NVIK Database VM "nipah_vm". User should follow
+				proceed to import NVIK VM "nipah_vm". User should follow
 				below mentioned steps to install VirtualBox on their machine.<b></b>
 				<ul>
 					<li>Windows users can install VirtualBox by double clicking on the
@@ -88,15 +88,14 @@ echo "<title>NVIK VirtualBox</title>";
 					</tr>
 				</table>
 
-				<hr /> <br /> <a name="vboxova"> <font size="3"><u>Downloading NVIK
-							Database "nipah_vm.ova" VM appliance file</u></font>
-			</a> <br /> <br /> User should download NVIK Database VM "nipah_vm"
+				<hr /> <br /> <a name="vboxova"> <font size="3"><u>Downloading NVIK "nipah_vm.ova" VM appliance file</u></font>
+			</a> <br /> <br /> User should download NVIK VM "nipah_vm"
 				for import VM appliance in VirtualBox. It is .ova file of ~4.3 GB
 				size. The VM is based on Ubuntu 12.04 x64 with configuration 1
 				processor, 2 GB RAM, 15 GB HDD disk space, Two network (NAT, Host
 				only) requires in VirtualBox for its working.
 				<ul>
-					<li><font size="4"><b> <a href="data/nipah_vm.ova">Click
+					<li><font size="4"><b> <a href="http://ab-openlab.csir.res.in/anshu/nipah/data/nipah_vm.ova">Click
 							here to download "nipah_vm.ova" file</a></b></font></li>
 				</ul> <br />
 
@@ -125,7 +124,7 @@ echo "<title>NVIK VirtualBox</title>";
 					</li>
 					
 
-					<li>Browse and give your NVIK Database VM appliance file
+					<li>Browse and give your NVIK VM appliance file
 						"nipah_vm.ova" path in Appliance to Import as shown in the figure
 						below and click next<br /> <br />
 
@@ -151,8 +150,7 @@ echo "<title>NVIK VirtualBox</title>";
 							</table>
 					</li>
 					</li>
-					<li>Your VM is created after import VM and you can see NVIK
-						Database VM "nipah_vm" your new VM name in the list. <br>For more
+					<li>Your VM is created after import VM and you can see NVIK VM "nipah_vm" your new VM name in the list. <br>For more
 							details about Import Wizard, please visit <a
 							href="https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html">https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html</a></br>
 						<table width="700">
@@ -170,14 +168,10 @@ echo "<title>NVIK VirtualBox</title>";
 											to Top</u></b></font></a></td>
 					</tr>
 				</table>
-				<hr /> <a name="vboxrun"> <font size="3"><u>Run and Update NVIK
-							Database Virtual machine in VirtualBox</u></font><br />
+				<hr /> <a name="vboxrun"> <font size="3"><u>Run and Update NVIK Virtual machine in VirtualBox</u></font><br />
 				<br />
-					<li>You can run the NVIK Database VM "nipah_vm" from the
-						VirtualBox and it will run VM with autologin to user "nipah" with
-						password "nipah_vm", start Apache webserver and MySQL database, and after that
-						it will open firefox by detault to show NVIK Database in VM on URL <a href="http://localhost/nipah/" target=_blank>http://localhost/nipah</a>.</li></a>
-						<br>You can also check database from VirtualBox host machine at URL <a href="http://192.168.56.101/nipah/" target=_blank>http://192.168.56.101/nipah/</a> due to host-only adaptor network default IP address</br>
+					<li>You can run the NVIK VM "nipah_vm" from the VirtualBox. It will start VM with auto-login to user "nipah" with password "nipah_vm", auto-start Apache webserver and MySQL database, then it will auto-open firefox by default after two minutes of the system starts to show NVIK in VM on URL <a href="http://localhost/nipah/" target=_blank>http://localhost/nipah</a>.</li></a>
+						<br>You can also check NVIK from VirtualBox host machine at URL <a href="http://192.168.56.101/nipah/" target=_blank>http://192.168.56.101/nipah/</a> using default IP address of host-only adaptor network</br>
 				<table width="700">
 					<tr>
 						<td align="center"><a href="images/vbox/vbox7.png"><img
@@ -191,11 +185,11 @@ echo "<title>NVIK VirtualBox</title>";
 											to Top</u></b></font></a></td>
 					</tr>
 				</table>
-				<li>You can clone NVIK Database source code from GitHub into your
+				<li>You can clone NVIK source code from GitHub URL <a href="https://github.com/tinabioinfo/nipah" target=_blank>https://github.com/tinabioinfo/nipah</a> into your
 					persoanl system or "nipah_vm" VM. <br><br/>
 					Go to the web directory: <b> $ cd /opt/lampp/htdocs/</b></br>
 					<br>For new repository:<b> $ sudo git clone
-						https://github.com/tinabioinfo/nipah</b></br> <br>For existing
+						https://github.com/tinabioinfo/nipah.git</b></br> <br>For existing
 						repository: <b>$ cd nipah; $ sudo git pull origin master; </b></br>
 						<br>Update folder permission: <b>$ sudo chown -R daemon.daemon /opt/lampp/htdocs/nipah/</b></br>
 						<br>Then
