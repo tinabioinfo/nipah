@@ -107,7 +107,7 @@
 		  width: 8em;
 		  height: 2em;
 		  padding: 0.3em;
-		  margin-top: 0em;
+		  margin-top: -0.5em;
 		  text-align: center;
 		  border-top-right-radius: 1em;
 		  border-bottom-right-radius: 0.5em;
