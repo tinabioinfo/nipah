@@ -190,11 +190,12 @@ echo "<title>NVIK VirtualBox</title>";
 					Go to the web directory: <b> $ cd /opt/lampp/htdocs/</b></br>
 					<br>For new repository:<b> $ sudo git clone
 						https://github.com/tinabioinfo/nipah.git</b></br> <br>For existing
-						repository: <b>$ cd nipah; $ sudo git pull origin master; </b></br>
+						repository: <b>$ cd nipah; sudo git pull origin master; </b></br>
 						<br>Update folder permission: <b>$ sudo chown -R daemon.daemon /opt/lampp/htdocs/nipah/</b></br>
 						<br>Then
-						Update the NVIK database:<b> $ /opt/lampp/bin/mysql -unipah
-						-pnipah_vm --force nipah < /opt/lampp/htdocs/nipah/data/nipah.sql </b>
+						Update the NVIK database:<b>
+							$ echo "drop databsae nipah; create database nipah"|/opt/lampp/bin/mysql -unipah -pnipah_vm ; <br>
+							/opt/lampp/bin/mysql -unipah -pnipah_vm --force nipah < /opt/lampp/htdocs/nipah/data/nipah.sql </b>
 				</br> <a></a><br></br>
 					<table width="700">
 						<tr>
