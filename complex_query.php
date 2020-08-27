@@ -105,7 +105,7 @@ words or letters and =, !=, <=, >=, < and > while dealing with numerical values.
 <form name='form1' action='$PHP' method='post' onsubmit="return formValidation(this);">
 <select name='fieldsi[]' style="font-size:20px">
 <option value='all'>All Fields</option>
-<option value='' align='center' style="background-color: #FFCCCC">Inhibitor Information</option>
+<option value='inh' align='center' style="background-color: #FFCCCC">Inhibitor Information</option>
 <option value='inhibitor'>Inhibitor Name</option>
 <option value='assay_type'>Assay Type</option>
 <option value='assay_dis'>Assay Description</option>
@@ -113,7 +113,7 @@ words or letters and =, !=, <=, >=, < and > while dealing with numerical values.
 <option value='cell_type'>Cell Type</option>
 <option value='ic'>IC50 (in nM)</option>
 <option value='ec'>EC50 (in nM)</option>
-<option value='' align='center' style="background-color: #FFCCCC">Physicochemical Properties</option>
+<option value='physiochem' align='center' style="background-color: #FFCCCC">Physicochemical Properties</option>
 <option value='mol_wt'>Mol Wt.</option>
 
 <option value='smiles'>SMILES</option>
@@ -122,7 +122,7 @@ words or letters and =, !=, <=, >=, < and > while dealing with numerical values.
 <option value='nHBd'>H-Bond Donor</option>
 <option value='nHBa'>H-Bond Acceptor</option>
 <option value='nRotB'>No. of Rotatable Bond Count</option>
-<option value='' align='center' style="background-color: #FFCCCC">Miscellaneous</option>
+<option value='misc' align='center' style="background-color: #FFCCCC">Miscellaneous</option>
 <option value='pubchem_id'>PubChem ID</option>
 <option value='chemspider'>ChemSpider ID</option>
 <option value='pubmed_source_lit'>PubMed ID (Source Literature)</option>
@@ -248,7 +248,7 @@ if (isset($_POST['keyword'])) {
         # # Coding for Single Query Start
         else {
             # echo $table."Y";
-            if ($field_val == 'all') {
+            if ($field_val == 'all' || $field_val == 'inh' || $field_val == 'physiochem' || $field_val == 'misc') {
                 $result = mysql_query("SHOW COLUMNS FROM $table");
                 
                 if (mysql_num_rows($result) > 0) {
