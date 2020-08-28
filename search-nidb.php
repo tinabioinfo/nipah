@@ -24,6 +24,13 @@ table.sample tr.d0 td {
 table.sample tr.d1 td {
 	background-color: #FEFEF2;
 }
+
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
 </style>
 HTML;
 if (! isset($_GET['page'])) {
@@ -221,40 +228,6 @@ if (! isset($_GET['page'])) {
     }
 
     # print $sql."<br>";
-
-    # #########################################
-    # ####### Download Data Coding START ######
-    # #########################################
-    /*
-     * shell_exec("find ./DATA -ctime +7 -exec rm -Rf {} \;");
-     *
-     * $ran_no = mt_rand(500, 100000000);
-     * $down_fi_name = "DATA/data-$ran_no.tab";
-     * $fh = fopen("$down_fi_name",'w');
-     * $down_res = mysql_query($sql) or die(mysql_error());
-     * $down_f_no = mysql_num_fields($down_res);
-     * for($k=0;$k<$down_f_no;$k++){
-     * $down_f_name = mysql_field_name($down_res, $k);
-     * fwrite($fh,"\"$down_f_name\"\t");
-     * }
-     * fwrite($fh,"\n");
-     * while($row=mysql_fetch_array($down_res)){
-     * for($k=0;$k<$down_f_no;$k++){
-     * $down_f_name = mysql_field_name($down_res, $k);
-     * $down_f_val = "$row[$down_f_name]";
-     * $down_f_val = str_replace("\n", "", $down_f_val);
-     * $down_f_val = str_replace("\r", "", $down_f_val);
-     * $down_f_val = str_replace("\t", "", $down_f_val);
-     * fwrite($fh,"\"$down_f_val\"\t");
-     * }
-     * fwrite($fh,"\n");
-     * }
-     * #fclose($down_res);
-     */
-    # #######################################
-    # ####### Download Data Coding END ######
-    # #######################################
-
     $_SESSION['skl'] = "$sql"; // /////////////////////// Pagination..............Coding.....!!!!!!!
     $_SESSION['start'] = 1;
     $_SESSION['rec_limit'] = $rec_limit;
@@ -267,9 +240,10 @@ if (! isset($_GET['page'])) {
     $_SESSION['total_page'] = $total_page;
     // print "$sql&nbsp;&nbsp;$rec_limit&nbsp;&nbsp;$no_res";
     if ($total_page > 1) {
-        print "<br><a href='search-nidb.php?page=1'><b><center><img src='images/next.jpg' align='center' height='30'></center></b>&nbsp;&nbsp;&nbsp;</a>";
+        print "<br><a href='search-nidb.php?page=1'><b><center><img src='images/next.jpg' align='center' height='30'></center></b></a>";
     }
-} else if (isset($_GET['page'])) {
+} 
+if (isset($_GET['page'])) {
     $sql = $_SESSION['skl'];
     $total_page = $_SESSION['total_page'];
     $rec_limit = $_SESSION['rec_limit'];
@@ -281,26 +255,46 @@ if (! isset($_GET['page'])) {
     }
     $pre_page = $page_no - 1;
     $page_no = $page_no + 1;
+    
+    print "<div class='row2'>";
     if ($page_no > 1) {
-        print "<br><br><a href='search-nidb.php?page=0'><b><center><img src='images/start.jpg' align='center' height='30'></center></b></a>&nbsp;&nbsp;&nbsp;";
+        print "<div class='column'>";
+        print "<a href='search-nidb.php?page=0'><b><img src='images/start.jpg' height='30'></b></a>";
     }
+    print "</div>";
+    
     if ($page_no > 1) {
-        print "<a href='search-nidb.php?page=$pre_page'><b><center><img src='images/prev.jpg' height='30'></center></b></a>&nbsp;&nbsp;&nbsp;";
+        print "<div class='column'>";
+        print "<a href='search-nidb.php?page=$pre_page'><b><img src='images/prev.jpg' height='30'></b></a>";
+        print "</div>";
     }
+    
+    
     if ($page_no < $total_page) {
         # echo"$page_no";
+        #
+        
         if ($page_no == 1) {
-            print "<br>><a href='search-nidb.php?page=$page_no'><b><center><img src='images/next.jpg' align='center' height='30'></center></b></a>&nbsp;&nbsp;&nbsp;";
+            print "<div class='row2'>";
+            print "<div class='column'>";
+            print "<a href='search-nidb.php?page=$page_no'><b><img src='images/next.jpg' height='30'></b></a>";
         } else {
-            print "<a href='search-nidb.php?page=$page_no'><b><center><img src='images/next.jpg' align='center' height='30'></center></b></a>&nbsp;&nbsp;&nbsp;";
+            print "<div class='column'>";
+            print "<a href='search-nidb.php?page=$page_no'><b><img src='images/next.jpg'  height='30'></b></a>";
         }
+        print "</div>";
     }
     // print $sql."<br>$total_page<br>$rec_limit";
+    
+    if ($page_no < $total_page && $total_page > 1) {
+        $last = $total_page - 1;
+        print "<div class='column'>";
+        print "<a href='search-nidb.php?page=$last'><b><img src='images/last.jpg' height='30'></b></a>";
+        print "</div>";
+    }  
+    print "</div>";
 }
-if ($page_no < $total_page && $total_page > 1) {
-    $last = $total_page - 1;
-    print "<a href='search-nidb.php?page=$last'><b><center><img src='images/last.jpg' height='30'><center></b></a>";
-}
+
 # print $res;
 $total_res = mysql_query($sql) or die(mysql_error());
 $total_records = mysql_num_rows($total_res);
@@ -665,5 +659,56 @@ else {
         $rec ++;
     }
 }
+# ## Start of bottom pagination
 
+if (isset($_GET['page'])) {
+
+    print "<div class='row2' style=\"margin-right: 160px;\">";
+    if ($page_no > 1) {
+        print "<div class='column'>";
+        print "<a href='search-nidb.php?page=0'><b><img src='images/start.jpg' height='30'></b></a>";
+    }
+    print "</div>";
+    
+    if ($page_no > 1) {
+        print "<div class='column'>";
+        print "<a href='search-nidb.php?page=$pre_page'><b><img src='images/prev.jpg' height='30'></b></a>";
+        print "</div>";
+    }
+    
+    
+    if ($page_no < $total_page) {
+        # echo"$page_no";
+        #
+        
+        if ($page_no == 1) {
+            print "<div class='row2' style=\"margin-right: 160px;\">";
+            print "<div class='column'>";
+            print "<a href='search-nidb.php?page=$page_no'><b><img src='images/next.jpg' height='30'></b></a>";
+        } else {
+            print "<div class='column'>";
+            print "<a href='search-nidb.php?page=$page_no'><b><img src='images/next.jpg'  height='30'></b></a>";
+        }
+        print "</div>";
+    }
+    // print $sql."<br>$total_page<br>$rec_limit";
+    
+    if ($page_no < $total_page && $total_page > 1) {
+        $last = $total_page - 1;
+        print "<div class='column'>";
+        print "<a href='search-nidb.php?page=$last'><b><img src='images/last.jpg' height='30'></b></a>";
+        print "</div>";
+    }
+
+    print "</div>";
+}
+elseif ($page_no < $total_page){
+    print "<div class='row2' style=\"margin-right: 160px;\">";
+    print "<div class='column'>";
+    print "<a href='search-nidb.php?page=$page_no'><b><img src='images/next.jpg' height='30'></b></a>";
+    print "</div>";
+    print "</div>";
+}
+
+### End of bottom pagination
 ?>
