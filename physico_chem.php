@@ -15,7 +15,8 @@ a.rollover img {
 a.rollover:hover > img {
         width: 220px;
         height: 215px;
-}
+          }
+th { word-wrap: break-word;max-width:150px; }
 </style>
 <br><br>
 <center><h2><b>Table: Selected Physicochemical Properties of NVI's molecules</b></h2></center>
