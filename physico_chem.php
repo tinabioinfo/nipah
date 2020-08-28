@@ -28,7 +28,7 @@ a.rollover:hover > img {
 <th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b>H-bond Donor</b>&nbsp;&nbsp;&nbsp;</a></font></th>
 <th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b>No. of rotatable bonds</b>&nbsp;&nbsp;&nbsp;</a></font></th>
 <th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b> TopoPSA</b>&nbsp;&nbsp;&nbsp;</a></font></th>
-<th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b>Molecular Weight</b>&nbsp;&nbsp;&nbsp;</a></font></th>
+<th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b>Molecular Weight (g/mol)</b>&nbsp;&nbsp;&nbsp;</a></font></th>
 <th align='center' bgcolor='#3E6990' class='tableHeader'><font color='white' size='3'><b>XLogP</b>&nbsp;&nbsp;&nbsp;</a></font></th></tr></thead>
 <tbody>
 HTML;
