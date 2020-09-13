@@ -3,11 +3,21 @@ include'template-nidb_new.php';
 include 'sidemenu.php';
 print<<<HTML
 <title>NVIK Statistics</title>
+<head>
+<style>
+.center {
+  text-align: center;
+  margin-right: 60px;
+}
+</style>
+</head>
+<body>
+<div class="center">
 <a name='nipah_stat'>
-<h2><center>NVI's Statistics</center></h2>
+<h2><center>Nipah Virus Inhibitors (NVIs) Statistics</center></h2>
 
 <br><br>
-<center><u><b>Table - 1:</b> General information about NVI's</u></center>
+<center><u><b>Table - 1:</b> General information about Nipah Virus Inhibitors (NVIs)</u></center>
 <br>
 
 <table border=1px; style='border-collapse:collapse;' align='center' width='700px'>
@@ -17,7 +27,7 @@ print<<<HTML
 <br><br>
 HTML;
 #include'con1.php';
-echo"<center><u><b>Table - 2:</b> Statistics of molecular properties of NVI's molecules</u></center>";
+echo"<center><u><b>Table - 2:</b> Statistics of molecular properties of NVIs molecules</u></center>";
 echo"<br>";
 echo"<table border=2px; style='border-collapse:collapse;' align='center' width='500px'>";
 $all = file("statistics_13_Nov_2019.txt");
@@ -31,41 +41,43 @@ echo"</table>";
 print<<<HTML
 <br><br>
 
-<center><u><b>Figure- 1:</b> Molecular weight distribution comparison between NVI's compounds, FDA approved small molecule drugs from Drugbank,<br> FDA approved Nutraceutical drugs from Drugbank and Anti-TB drugs </u></center>
+<center><u><b>Figure- 1:</b> Molecular weight distribution comparison between NVIs with respect to Enamine antiviral library and FDA approved compounds</u></center>
 <br>
 <center><img width='66%' src='images/prop/MW.png' border=0px; style='border-collapse:collapse;'></center>
 <center><a href='#top' style='text-decoration: none;'><b>[Top]</b></a></center>
 <br><br>
 
-<center><u><b>Figure- 2:</b> Hydrogen bond donor distribution comparison between NVI's compounds, FDA approved small molecule drugs from Drugbank,<br> FDA approved Nutraceutical drugs from Drugbank and Anti-TB drugs </u></center>
+<center><u><b>Figure- 2:</b> Hydrogen bond donor distribution comparison between NVIs with respect to Enamine antiviral library and FDA approved compounds</u></center>
 <br>
 <center><img width='66%' src='images/prop/HBD.png' border=0px; style='border-collapse:collapse;'></center>
 <center><a href='#top' style='text-decoration: none;'><b>[Top]</b></a></center>
 <br><br>
 
-<center><u><b>Figure- 3:</b> Hydrogen bond acceptor distribution comparison between NVI's compounds, FDA approved small molecule drugs from Drugbank,<br> FDA approved Nutraceutical drugs from Drugbank and Anti-TB drugs </u></center>
+<center><u><b>Figure- 3:</b> Hydrogen bond acceptor distribution comparison between NVIs with respect to Enamine antiviral library and FDA approved compounds</u></center>
 <br>
 <center><img width='66%' src='images/prop/HBA.png' border=0px; style='border-collapse:collapse;'></center>
 <center><a href='#top' style='text-decoration: none;'><b>[Top]</b></a></center>
 <br><br>
 
-<center><u><b>Figure- 4:</b> XLogP distribution comparison between NVI's compounds, FDA approved small molecule drugs from Drugbank, <br>FDA approved Nutraceutical drugs from Drugbank and Anti-TB drugs </u></center>
+<center><u><b>Figure- 4:</b> XLogP distribution comparison between NVIs with respect to Enamine antiviral library and FDA approved compounds</u></center>
 <br>
 <center><img width='66%' src='images/prop/XLogP.png' border=0px; style='border-collapse:collapse;'></center>
 <center><a href='#top' style='text-decoration: none;'><b>[Top]</b></a></center>
 <br><br>
 
-<center><u><b>Figure- 5:</b> Number of rotatable bonds distribution comparison between NVI's compounds, FDA approved small molecule drugs from Drugbank,<br> FDA approved Nutraceutical drugs from Drugbank and Anti-TB drugs </u></center>
+<center><u><b>Figure- 5:</b> Number of rotatable bonds distribution comparison between NVIs with respect to Enamine antiviral library and FDA approved compounds</u></center>
 <br>
 <center><img width='66%' src='images/prop/RotB.png' border=0px; style='border-collapse:collapse;'></center>
 <center><a href='#top' style='text-decoration: none;'><b>[Top]</b></a></center>
 <br><br>
 
-<center><u><b>Figure- 6:</b>Topological Polar surface area distribution comparison between NVI's compounds, FDA approved small molecule drugs from <br>Drugbank, FDA approved Nutraceutical drugs from Drugbank and Anti-TB drugs </u></center>
+<center><u><b>Figure- 6:</b>Topological Polar surface area distribution comparison between NVIs with respect to Enamine antiviral library and FDA approved compounds</u></center>
 <br>
 <center><img width='66%' src='images/prop/TopoPSA.png' border=0px; style='border-collapse:collapse;'></center>
 <center><a href='#top' style='text-decoration: none;'><b>[Top]</b></a></center>
 <br><br>
+</div>
 
+</body>
 HTML;
 ?>

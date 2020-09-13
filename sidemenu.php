@@ -245,7 +245,7 @@
 				  <ul>
 					
 					<li><a href="arch.php">Architecture</a></li>
-					<li><a href="stats.php">NVI's Stats</a></li>
+					<li><a href="stats.php">NVIs Stats</a></li>
 					<li><a href="physico_chem.php">Properties</a></li>
 					<li><a href="priority_inhibitors.php" style="font-size: 15px;">Priority Inhibitors</a></li>
 					<li><a href="circos.php">Clustring</a></li>
