@@ -46,8 +46,8 @@ return false;
 	<tr bgcolor="#f1f1f1"><td><b>Targets/Mechanisms</b> </td><td><input type="checkbox" value="target" name="hse[]"></td><td><input type="checkbox"  value="target" name="hde[]"></td></tr>
 	<tr bgcolor="#f1f1f1"><td><b>Assay Type</b> </td><td><input type="checkbox" value="assay_type" name="hse[]"></td><td><input type="checkbox"  value="assay_type" name="hde[]"></td></tr>
 	<tr bgcolor="#f1f1f1"><td><b>Cell Type</b> </td><td><input type="checkbox" value="cell_type" name="hse[]"></td><td><input type="checkbox"  value="cell_type" name="hde[]"></td></tr>
-	<tr bgcolor="#f1f1f1"><td><b>IC50 Value</b></td><td><input type="checkbox" value="ic" name="hse[]"></td><td><input type="checkbox"  value="ic" name="hde[]"></td></tr>
-	<tr bgcolor="#f1f1f1"><td><b>EC50 Value</b> </td><td><input type="checkbox" value="ec" name="hse[]"></td><td><input type="checkbox"  value="ec" name="hde[]"></td></tr>
+	<tr bgcolor="#f1f1f1"><td><b>IC50 Value (in nM)</b></td><td><input type="checkbox" value="ic" name="hse[]"></td><td><input type="checkbox"  value="ic" name="hde[]"></td></tr>
+	<tr bgcolor="#f1f1f1"><td><b>EC50 Value (in nM)</b> </td><td><input type="checkbox" value="ec" name="hse[]"></td><td><input type="checkbox"  value="ec" name="hde[]"></td></tr>
 	<tr bgcolor="#f1f1f1"><td><b>PubMed ID</b> </td><td><input type="checkbox" value="pubmed_source_lit" name="hse[]"></td><td><input type="checkbox"  value="pubmed_source_lit" name="hde[]"></td></tr>
 	</tbody></table>
 
