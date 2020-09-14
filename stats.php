@@ -21,8 +21,8 @@ print<<<HTML
 <br>
 
 <table border=1px; style='border-collapse:collapse;' align='center' width='700px'>
-<tr bgcolor='#3E6990'><td align='center'><font color='white'>Total entries</font></td align='center'><td align='center'><font color='white'>Inhibitors</font></td align='center'><td align='center'><font color='white'>Targets</font></td align='center'><td align='center'><font color='white'>IC50 [uM]</font></td align='center'><td align='center'><font color='white'>Chemspider Ids</font></td align='center'></tr>
-<tr><td align='center'>125</td><td align='center'>98</td><td align='center'>39</td><td align='center'>60</td><td align='center'>96</td></tr>
+<tr bgcolor='#3E6990'><td align='center'><font color='white'>Total entries</font></td align='center'><td align='center'><font color='white'>Inhibitors</font></td align='center'><td align='center'><font color='white'>Targets</font></td align='center'><td align='center'><font color='white'>IC50 [nM]</font></td align='center'><td align='center'><font color='white'>Chemspider Ids</font></td align='center'></tr>
+<tr><td align='center'>125</td><td align='center'>98</td><td align='center'>29</td><td align='center'>47</td><td align='center'>98</td></tr>
 </table>
 <br><br>
 HTML;
