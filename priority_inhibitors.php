@@ -61,9 +61,9 @@ if (($handle = fopen("priority_inhibitors.tsv", "r")) !== FALSE) {
     fclose($handle);
 
 }
-print "<div style=\"text-align:center;font-weight: bold;\";  ><br>
-List of prioritized NVIs along with their biological activity, drug likeness profile and structural similarity to antiviral libraries.<br>
+print "<center><h3>List of prioritized NVIs along with their biological activity, drug likeness profile and<br> structural similarity to antiviral libraries.</h3>
+Accepted, Rejected, and PAINS fields are taken from FaF Drugs4<br>
 &#10004; for 'YES' and &#10008; for 'NO'<br>
 * minimum value has been reported<br>
-** minimum effective concentration<br>Accepted, Rejected, and PAINS fields are taken from FaF Drugs4</div>";
+** The inhibitory concentration was defined as the minimum concentration at which no CPE (cytopathic effect) was observed.<br></center>";
 ?>
